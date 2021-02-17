@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="username">Nombre de usuario</label>
+        <input type="text" value="" name="username" autocomplete="off" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+        <br>
+        <label for="country">Pais</label>
+        <select name="country">
+            <option value="EU">Estados unidos</option>
+            <option value="CA">Canada</option>
+            <option value="MX">Mexico</option>
+        </select>
+        <br>
+        <label for="description">Descripcion</label>
+        <textarea name="description" readonly=></textarea>
+        <br>
+        <label for="age">Edad</label>
+        <input type="number" name="age" min="13" max="100" step="0.5" disabled>
+        <br>
+        <label for="email">Correo Electronico</label>
+        <input type="email" name="email" autocomplete="off" placeholder="ejemplo@hotmail.com">
+        <br>
+        <label for="phone">Telefono</label>
+        <input type="tel" name="phone" autocomplete="off" placeholder="444-444-4444">
+        <br>
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
