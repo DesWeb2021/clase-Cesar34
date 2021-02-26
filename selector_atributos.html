@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector de atributos</title>
+
+    <style>
+        [name] { /* tiene el atributo, no importa el valor*/
+            background-color: cadetblue;
+        }
+
+        [for="name"] { /*Atributo con e valor exacto*/
+            text-transform: uppercase;
+        }
+
+        [alt~="Autonoma"] { /* Atributo con la PALABRA en el valor*/
+            height: 50px;
+        }
+
+        [id|="parrafo"] { /* Atributo que valor empiece con la PALABRA */
+            border: solid 2px red;
+        }
+
+        [id^="p"] { /* Atributo que valor empeice con la cadena*/
+            font-size: 20px;
+        }        
+
+        [name$="e"] { /* Atributo que el valor termine con la cadena*/
+            margin-left: 20px;
+        }
+
+        [for*="name"] { /* Atributo que el valor contiene la cadena*/
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p id="parrafo-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam obcaecati totam excepturi, dolore hic earum quia ex adipisci, recusandae debitis ab, dolores fugiat unde omnis iste enim? A, dolorum asperiores</p>
+    <p id="parrafo-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure odio doloremque corrupti quidem accusantium officia voluptatum reprehenderit quae tenetur quia inventore, tempora nemo suscipit, alias, soluta quam velit saepe fuga?</p>
+    <p id="parrafo-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta et sapiente ipsum nostrum debitis nisi, nobis velit, rerum porro, veniam alias impedit dolore blanditiis. Suscipit ratione inventore itaque odit! Molestiae.</p>
+    <img src="game_1.jfif" alt="Universidad Autonoma">
+
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" name="name">
+        <br>
+        <label for="lastname1">Apellido Paterno</label>
+        <input type="text" name="lastname1">
+        <br>
+        <label for="lastname2">Apellido Materno</label>
+        <input type="text" name="lastname2">
+        <br>
+        <label for="phone">Telefono</label>
+        <input type="tel" name="phone">
+        <br>
+    </form>
+</body>
+</html>
